@@ -1,0 +1,56 @@
+#hello-box {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    text-align: center;
+    
+    /* Rotate div 
+    -ms-transform: rotate(7deg); /* IE 9 
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera 
+    transform: rotate(7deg); */
+}
+
+#hello-box p{
+    padding-top: 95px;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.bounce{
+    -moz-animation-name: bounce;
+    -moz-animation-duration: 2s;	
+	-webkit-animation-name: bounce;
+    -webkit-animation-duration: 2s;
+	-o-animation-name: bounce;
+    -o-animation-duration: 2s;
+    animation-name: bounce;
+    animation-duration: 2s;
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+  40% {-moz-transform: translateY(-50px);}
+  60% {-moz-transform: translateY(-15px);}
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+  40% {-webkit-transform: translateY(-50px);}
+  60% {-webkit-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+  40% {-o-transform: translateY(-50px);}
+  60% {-o-transform: translateY(-15px);}
+}
+
+keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-50px);}
+  60% {transform: translateY(-15px);}
+}
