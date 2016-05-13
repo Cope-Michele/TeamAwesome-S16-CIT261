@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function flashcard(question, answer) {
+    this.question = question;
+    this.answer = answer;
+
+}
+
+var ccnaQ1 = new flashcard("What is the subnet mask for a class C subnet?", "255.255.255.0");
+
+var ccnaQ2 = new flashcard("What is the subnet mask for a class B subnet?", "255.255.0.0");
+
+</script>
+
+<script>
+document.write(ccnaQ1.question);
+</script><br>
+<button onclick="document.write(ccnaQ1.answer)">Flip Card</button><br><br>
+
+<script>
+document.write(ccnaQ2.question);
+</script><br>
+<button onclick="document.write(ccnaQ2.answer)">Flip Card</button>
+
+</body>
+</html>
