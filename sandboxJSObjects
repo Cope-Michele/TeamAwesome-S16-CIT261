@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Creating a JavaScript Object. <br>My object is going to be a flashcard</p>
+
+
+<script>
+
+var flashcard = {
+    question : "What is the subnet mask for a class C subnet?",
+    answer   : "255.255.255.0"
+};
+
+</script>
+
+<p> CCNA flashcard deck </p>
+
+<script>
+document.write(flashcard.question);
+</script><br>
+
+<button onclick="document.write(flashcard.answer)">Flip Card</button>
+
+
+</body>
+</html>
