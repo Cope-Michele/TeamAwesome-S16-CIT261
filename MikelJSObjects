@@ -1,0 +1,127 @@
+
+    <br>
+    
+<div id="header">
+
+   
+    <h1>
+        Welcome to MButterfield.com
+    </h1>
+<!--
+Add site logo here!
+
+    <a href="http://MButterfield.com" title="Go to the homepage">
+        <img src="images/mikelsjamlogo.png" alt="site logo">
+    </a>
+-->
+</div>              
+<nav role="navigation">
+    <div id="links">
+        <ul>     
+            <li><a href="http://Mbutterfield.com/">Home</a></li>
+            <li><a href="/triathlon/" target="_blank">HTML and CSS</a></li>
+            <li><a href="/address_book/" target="_blank">PHP and MySQL</a></li>
+            <li><a href="https://github.com/lake-bodom/The-Quest-for-the-Mystic-Orb" target="_blank">Java</a></li>
+            <li><a href="/javascript/" >JavaScript</a></li>
+        </ul>                            
+
+    </div> 
+</nav>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+       <link href="http://mbutterfield.com/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+        <title>MButterfield.com</title>
+        <meta name="author" content="Mikel Butterfield">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<!--APPLICATION #1: BMI Calculator --> <br><br>
+<script type="text/javascript">
+    /* input: The weight and height of a person
+     * processing: Calculate the users body mass index.
+     * output: The users body mass index
+     */
+    function bmi() {
+
+// Gets inches and turns it into a number
+        var i = parseFloat(document.getElementById('inches').value);
+// Gets pounds and turns it into a number
+        var p = parseFloat(document.getElementById('pounds').value);
+// Convert users bmi
+        var b = (703 * p) / (i * i)
+// Display users BMI
+        document.getElementById('bmi').innerHTML = b;
+
+    }
+</script>
+</head>
+<h3>BMI Calculator</h3>
+    Enter your height in inches: <input type="text" id="inches"><br>
+    Enter your weight in pounds: <input type="text" id="pounds"><br>
+    <button type="button" onclick="bmi()">Click here to see your BMI below</button>
+    <div id="bmi"></div> 
+    <p>Underweight = BMI less than 18.5 
+        <br>Normal weight = BMI between 18.5 and 24.9 
+        <br>Overweight = BMI between 25 and 29.9 
+        <br>Obesity = BMI of 30 or greater</p>
+  
+    <!--APPLICATION #2: Loan Calculator -->
+<script type="text/javascript">
+
+/*Input: info about a loan
+*processing: calculate payments and how much you have left to pay
+*output: payments and how much you have left to pay 
+*/
+
+function doPayment() {
+var p = parseFloat(document.getElementById('principal').value);
+var ar = parseFloat(document.getElementById('annualRate').value);
+var y = parseFloat(document.getElementById('years').value);
+var ppy = parseFloat(document.getElementById('periodsPerYear').value);
+var cp = computePayment(p, ar, y, ppy);
+document.getElementById('payment').innerHTML = cp;
+}
+
+function doBalance() {
+var p = parseFloat(document.getElementById('principal').value);
+var ar = parseFloat(document.getElementById('annualRate').value);
+var y = parseFloat(document.getElementById('years').value);
+var ppy = parseFloat(document.getElementById('periodsPerYear').value);
+var nopptd = parseFloat(document.getElementById('numberOfPaymentsPaidToDate').value);
+var b = computeBalance(p, ar, y, ppy, nopptd);
+document.getElementById('off').innerHTML = b;
+}
+
+function computePayment(principal, annualRate, years, periodsPerYear) {
+var cp = (principal * (annualRate/periodsPerYear))/(1- Math.pow((1+annualRate/periodsPerYear), (-years * periodsPerYear)));
+return cp;
+}
+
+function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentsPaidToDate) {
+var b = principal * Math.pow((1+annualRate/periodsPerYear), numberOfPaymentsPaidToDate) - (principal * (annualRate/periodsPerYear))/(1- Math.pow((1+annualRate/periodsPerYear), (-years * periodsPerYear))) * (Math.pow((1 + annualRate/periodsPerYear), numberOfPaymentsPaidToDate) - 1) / (annualRate/periodsPerYear);
+return b;
+}
+
+</script>
+</head>
+<body>
+<h3>Loan Calculator</h3>
+Amount borrowed (principal) <input type="text" id="principal"><br>
+Annual interest rate (example: .065) <input type="text" id="annualRate"><br>
+Number of years <input type="text" id="years"><br>
+Payments per year <input type="text" id="periodsPerYear"><br>
+<button type="button" onclick="doPayment()">Compute payment</button><br>
+<div id="payment"></div><br>
+Number of payments paid to date <input type="text" id="numberOfPaymentsPaidToDate"><br>
+<button type="button" onclick="doBalance()">Compute payoff amount</button><br>
+<div id="off"></div><br><br>
+</body>
+    <div id="footer">
+    <script src="/javascript/analytics.js"></script>
+    <ul>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    <p>&copy;2016 Mikel Butterfield</p>
+    <p>Last Updated: 14 April, 2016</p>
+</div>
