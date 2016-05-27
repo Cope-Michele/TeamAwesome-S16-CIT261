@@ -1,0 +1,148 @@
+
+ 
+<br><br><div id="header">
+
+   
+    <h1>
+        Welcome to MButterfield.com
+    </h1>
+<!--
+Add site logo here!
+
+    <a href="http://MButterfield.com" title="Go to the homepage">
+        <img src="images/mikelsjamlogo.png" alt="site logo">
+    </a>
+-->
+</div>              
+<nav role="navigation">
+    <div id="links">
+        <ul>     
+            <li><a href="http://Mbutterfield.com/">Home</a></li>
+            <li><a href="/triathlon/" target="_blank">HTML and CSS</a></li>
+            <li><a href="/address_book/" target="_blank">PHP and MySQL</a></li>
+            <li><a href="https://github.com/lake-bodom/The-Quest-for-the-Mystic-Orb" target="_blank">Java</a></li>
+            <li><a href="/javascript/" >JavaScript</a></li>
+        </ul>                            
+
+    </div> 
+</nav>
+<br><br><html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <link href="http://mbutterfield.com/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+        <title>MButterfield.com</title>
+        <meta name="author" content="Mikel Butterfield">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <h2>CSS3 transitions and transforms</h2>
+
+    <p>My teaching presentation on this topic is found in the link below.</p>
+    <a href="https://www.youtube.com/watch?v=6gH24oXlf1U&feature=youtu.be">https://www.youtube.com/watch?v=6gH24oXlf1U&feature=youtu.be</a>
+
+    <h4>This is a flashcard that uses both transition and transform</h4>
+    <div id="flashcard">
+        <div id="card_surface" class="shadow">
+            <div class="front face">
+                <p>What is the default subnet mask for a class C IP address?</p>
+            </div>
+            <div class="back face center">
+                <p>255.255.255.0</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        #flashcard {
+            position: relative;
+            margin: 10px auto;
+            width: 120px;
+            height: 190px;
+            z-index: 1;
+        }
+        #flashcard {
+            perspective: 1000;
+        }
+        #card_surface {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            /* this is what makes it look like it flips */
+            transition: all 1.0s linear;
+        }
+        #flashcard:hover #card_surface {
+            /* This makes it so the other side is displayed */
+            transform: rotateY(180deg);
+            box-shadow: -5px 5px 5px #aaa;
+        }
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+            color: black;
+            text-align: center;
+            background-color: #ddd;
+        }
+        .face.back {
+            display: block;
+            /* This makes it so the front is shown */
+            transform: rotateY(180deg);
+            box-sizing: border-box;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            background-color: #aaa;
+        }
+    </style>
+
+    <h4>This is a simple 10 second timer that uses transitions.</h4>
+
+    <div id="timeleft"><div id="timer">Hover your mouse here to use the 10 second timer.</div></div>
+    <style> 
+        #timer {
+            width: 100px;
+            height: 100px;
+            background: red;
+            -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+            
+            transition: width 10s;
+        }
+
+        #timer:hover {
+            width: 400px;
+            transition-timing-function: linear; /* This makes the timer run evenly */
+        }
+        #timeleft {
+            width: 400px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+<h4>This element is moved using a transform</h4>
+<div id="transform">Hover here to see me tilt.</div>
+
+<style>
+#transform {
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#transform:hover {
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg); /* Standard syntax */
+    
+}
+</style>
+<div id="footer">
+    <script src="/javascript/analytics.js"></script>
+    <ul>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    <p>&copy;2016 Mikel Butterfield</p>
+    <p>Last Updated: 27 May, 2016</p>
+</div>
