@@ -1,0 +1,85 @@
+<div id="header">
+    <br><br><h1>
+        Welcome to MButterfield.com
+    </h1>
+    <!--
+    Add site logo here!
+    
+        <a href="http://MButterfield.com" title="Go to the homepage">
+            <img src="images/mikelsjamlogo.png" alt="site logo">
+        </a>
+    -->
+</div>              
+<nav role="navigation">
+    <div id="links">
+        <ul>     
+            <li><a href="http://Mbutterfield.com/">Home</a></li>
+            <li><a href="/triathlon/" target="_blank">HTML and CSS</a></li>
+            <li><a href="/address_book/" target="_blank">PHP and MySQL</a></li>
+            <li><a href="https://github.com/lake-bodom/The-Quest-for-the-Mystic-Orb" target="_blank">Java</a></li>
+            <li><a href="/261portfolio/" >JavaScript and CSS3</a></li>
+        </ul>                            
+
+    </div> 
+</nav>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <link href="http://mbutterfield.com/stylesheet.css" rel="stylesheet" type="text/css" media="screen">
+        <title>MButterfield.com</title>
+        <meta name="author" content="Mikel Butterfield">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <h2>Using local data storage</h2>
+
+</head>
+
+
+    <h3>Mikel's NoteBook</h3>
+    <p>You can use the local storage on your device to save a note for yourself. Just type a note, save it, and next time you open this site it will have the note for you.</p>
+    <textarea name='notepad' id='notepad' cols="40" rows="5">Type a note to yourself here.</textarea><br>
+    <button type="button" onclick="notebook()">Save your note</button>
+    <p>Next time you load this page, this note will display:</p> <p id="results"></p>
+    <script>
+        function notebook() {
+            if (typeof (Storage) !== "undefined") {
+
+             localStorage.setItem("savedNote", String(document.getElementById('notepad').value));
+             document.getElementById("results").innerHTML = localStorage.getItem("savedNote");
+            } else {
+                document.getElementById("notepad").innerHTML = "Sorry, no local storage."
+            }
+        }
+    </script>
+    
+    
+    <p>Your most recent note:</p>
+    <div id="result" style="border:solid; length:100px; width:300px"></div>
+    
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.setItem("myNote", localStorage.getItem("savedNote"));
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.getItem("myNote");
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+   
+    
+    
+    
+
+
+    <div id="footer">
+    <script src="/javascript/analytics.js"></script>
+    <ul>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+    <p>&copy;2016 Mikel Butterfield</p>
+    <p>Last Updated: 2 June, 2016</p>
+</div>
