@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans%7Cardo' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <title>Michele V Cope - CIT261</title>
+        <link href="mvc-site-styleguide.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body class="sub-gallery">
+        <div class="header">
+            <header>
+                <menu type="toolbar" class="header-nav" id="second-nav">
+                    <ul>
+                        <li><a href="index.html">
+                                <img id="small-logo" src="images/mini-logo-yellow.png" alt="Michele Cope Logo"/>
+                            </a></li>
+                        <li><a href="#JSON">JSON</a></li>
+                        <li><a href="#JavaScript">JavaScript Objects</a></li>
+                        <li><a href="#DOM">DOM (Document Object Model) Manipulation</a></li>
+                        <li><a href="#CSS-Transitions">CSS Transitions and Transforms</a></li>
+                        <li><a href="#CSS-Animations">CSS Animations</a></li>
+                        <li><a href="#Local-Storage">Local Storage</a></li>
+                        <li><a href="#AJAX">AJAX</a></li>
+                    </ul>
+                </menu>
+            </header>
+        </div>
+
+        <div id="cit261">      
+            <h1>CIT 261 Portfolio</h1>
+            
+                <br>
+                <br>
+            
+            <p>My CIT 261 portfolio and sandbox will be updated here!</p>
+            
+            <div id="JSON">
+                <h2>JSON</h2>
+                
+                <p>My JSON example is entertwined with my AJAX example below. The AJAX example uses javascript and AJAX to grab a random image from a JSON object and display it to the user.</p>
+            </div>
+            
+            <div id="JavaScript">
+                <h2>Javascript</h2>
+                
+                <p>My JavaScript example is entertwined with my AJAX example below. The AJAX Example uses javascript and AJAX to grab a random image from a JSON object and display it to the user.</p>
+                
+            </div>
+            
+            <div id="DOM">
+                <h2>DOM</h2>
+            </div>
+            
+            <div id="CSS-Transitions">
+                <h2>CSS-Transitions</h2>
+            </div>
+            
+            <div id="CSS-Animations">
+                <h2>CSS-Animations</h2>
+                
+                <p>Currently only works on page refresh.</p>
+                
+                <div class="bounce" id="hello-box">
+                    <p>Hello</p>
+                </div>
+            </div>
+            
+            <div id="Local-Storage">
+                <h2>Local-Storage</h2>
+            </div>
+            
+             <div id="AJAX">
+                <h2>AJAX</h2>
+                 
+                <p>I've used AJAX to load a random image from a JSON object. I have not yet corrected my function to make sure the image changes every time, so on some clicks it might appear that a new random image is not loading because my function might grab the same random number multiple times in a row. Click again to see if it changes!</p>
+                 
+                <button type="button" onclick="loadRandomImage()">Load random image</button>
+                <div id="example-image-container">
+   
+                </div>
+                 
+            </div>
+        
+        </div>
+
+        <div class="footer">
+            <footer>
+                <p>&copy;Michele V Cope</p>
+            </footer>
+        </div>
+        
+        <script src="ajax-example.js"></script>
+    </body>
+</html>
