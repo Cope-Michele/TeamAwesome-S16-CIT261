@@ -1,0 +1,389 @@
+
+<html>
+    <body onload="onLoad()"></body>
+    <h3>How much do you have in common with Mikel?</h3>
+
+
+
+    <div id="question1">
+        Would you rather play video games, go hiking, or watch a movie?<br>
+        <button type="button" onclick="videoGames()">Play video games</button>
+        <button type="button" onclick="hiking()">Go hiking</button>
+        <button type="button" onclick="movie()">Watch a movie</button><br><br>
+    </div>
+
+    <div id="question2">
+        What is your favorite color out of these three? <br>
+        <button type="button" onclick="red()">Red</button>
+        <button type="button" onclick="blue()">Blue</button>
+        <button type="button" onclick="green()">Green</button><br><br>
+    </div>
+
+    <div id="question3">
+        What would you rather listen to?<br>
+        <button type="button" onclick="metal()">Metal</button>
+        <button type="button" onclick="pop()">Pop</button>
+        <button type="button" onclick="hardcore()">Hardcore</button><br><br>
+    </div>
+
+    <div id="question4">
+        What is your name, age, and gender?<br>
+        Name:<input type="text" id="name" ><br>
+        Age:<input type="text" id="age" ><br>
+        Gender:<input type="text" id="gender" ><br>
+    </div>
+    <div id="submitButton">
+        <button type="button" onclick="textInput()" onclick="json()">Submit</button>
+    </div><br>
+
+    <div id="question5">
+        Do you want your information serialized?<br>
+        <button type="button" onclick="json()">Yes</button>
+        <button type="button" onclick="json2()">No</button> <br>    
+    </div>
+    <div id="welcome"></div>
+    <div id="welcome2"></div><br>
+
+    <div id="question6">
+        Do you like this quiz? want to visit my homepage? <br>Clicking the button will create a link next to the reset score button at the bottom of the page.<br>You can make as many as you want! <br>
+        <button type="button" onclick="createBox()" onlcick="there is now a link to my page below.">Yeah</button>
+    </div>
+
+
+    <div id="score"></div>
+    <br><br>
+    Score results:<br>
+    -500 through 1: We don't have much in common, but we can be friends anyway.<br> 
+    2 through 4: We have a little bit in common<br>
+    5 through 6: We have quite a bit in common<br>
+    7+: Good job, maybe you need to clear your local storage.
+    <p>Your score will be saved in local storage. Each time you take this test the points you get will be added to your old score.</p>
+    <button type="button" onclick="reset()">You can reset your score by clicking here.</button>
+
+
+
+    <script>
+        function videoGames() {
+            var vGames = new XMLHttpRequest();
+            vGames.onreadystatechange = function () {
+                if (vGames.readyState == 4 && vGames.status == 200) {
+                    document.getElementById("question1").innerHTML = vGames.responseText;
+                }
+            };
+            vGames.open("GET", "z1.txt", true);
+            vGames.send();
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 1;
+                } else {
+                    localStorage.score = 1;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+        }
+
+
+
+        function hiking() {
+            var hike = new XMLHttpRequest();
+            hike.onreadystatechange = function () {
+                if (hike.readyState == 4 && hike.status == 200) {
+                    document.getElementById("question1").innerHTML = hike.responseText;
+                }
+            };
+            hike.open("GET", "z2.txt", true);
+            hike.send();
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 2;
+                } else {
+                    localStorage.score = 2;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+        }
+
+
+        function movie() {
+            var movies = new XMLHttpRequest();
+            movies.onreadystatechange = function () {
+                if (movies.readyState == 4 && movies.status == 200) {
+                    document.getElementById("question1").innerHTML = movies.responseText;
+                }
+            };
+            movies.open("GET", "z0.txt", true);
+            movies.send();
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 0;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+        }
+
+        function red() {
+            document.body.style.backgroundColor = "DarkSalmon";
+            document.getElementById("question2").style.color = "firebrick";
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 1;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question2").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z1.txt", true);
+            answer.send();
+
+        }
+
+        function blue() {
+            document.body.style.backgroundColor = "cyan";
+            document.getElementById("question2").style.color = "darkblue";
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 0;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question2").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z0.txt", true);
+            answer.send();
+        }
+
+        function green() {
+            document.body.style.backgroundColor = "GreenYellow";
+            document.getElementById("question2").style.color = "ForestGreen";
+
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 2;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question2").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z2.txt", true);
+            answer.send();
+        }
+
+
+        function metal() {
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 2;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question3").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z2.txt", true);
+            answer.send();
+        }
+        function pop() {
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 0;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question3").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z0.txt", true);
+            answer.send();
+        }
+        function hardcore() {
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) - 500;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question3").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z-.txt", true);
+            answer.send();
+        }
+
+        function reset() {
+
+            localStorage.score = 0;
+            document.getElementById("score").innerHTML = "Your score has been reset to: " + localStorage.score;
+        }
+
+
+        function textInput() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 1;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+
+
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("submitButton").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z1.txt", true);
+            answer.send();
+
+        }
+
+        function json() {
+
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var gender = document.getElementById("gender").value;
+            var array = [name, age, gender];
+            var json = JSON.stringify(array);
+            var noJson = JSON.parse(json);
+
+            document.getElementById("welcome").innerHTML = "your info is " + json;
+
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 2;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question5").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z2.txt", true);
+            answer.send();
+        }
+        function json2() {
+
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var gender = document.getElementById("gender").value;
+            var array = [name, age, gender];
+            var json = JSON.stringify(array);
+            var noJson = JSON.parse(json);
+
+
+            document.getElementById("welcome2").innerHTML = "your info is " + noJson;
+
+
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.score) {
+                    localStorage.score = Number(localStorage.score) + 1;
+                } else {
+                    localStorage.score = 0;
+                }
+                document.getElementById("score").innerHTML = "Your score: " + localStorage.score;
+            } else {
+                document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
+            }
+
+            var answer = new XMLHttpRequest();
+            answer.onreadystatechange = function () {
+                if (answer.readyState == 4 && answer.status == 200) {
+                    document.getElementById("question5").innerHTML = answer.responseText;
+                }
+            };
+            answer.open("GET", "z1.txt", true);
+            answer.send();
+        }
+
+        function createBox() {
+            var btn = document.createElement("a");
+            var t = document.createTextNode("Would you like to visit my homepage? Click here!");
+            btn.setAttribute('href', "http://mbutterfield.com");
+            btn.appendChild(t);
+            document.body.appendChild(btn);
+        }
+
+        function onLoad() {
+            alert("Welcome to Mikel's Quiz! Find out how much you have in common with Mikel here!");
+        }
+
+
+    </script>
+
+</html>
