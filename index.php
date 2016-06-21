@@ -12,10 +12,7 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <nav class="">
-        <a href="">1st page</a>
-      </nav>
+    <?php include '/moduled/header.php'; ?> <!-- see header.php for code -->
       <div class="">
         <h2>Home</h2>
         <div class="" id="">
@@ -32,7 +29,7 @@
       <p></p>
     </section>
   </div>
-  <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php';?>
+  <?php include '/moduled/footer.php'; ?> <!-- see footer.php for code -->
 </body>
 
 </html>
