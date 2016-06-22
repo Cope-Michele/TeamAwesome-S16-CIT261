@@ -13,23 +13,17 @@
 <body>
   <div class="container">
     <?php include '/moduled/header.php'; ?> <!-- see header.php for code -->
-      <div class="">
-        <h2>Home</h2>
-        <div class="" id="">
-          <ul>
-            <li class=""><a href=""><span>first item</span></a></li>
-          </ul>
+    <div id="f1_container">
+      <div id="f1_card" class="shadow">
+        <div class="front face">
+          <p>What is the capital of Indiana?</p>
+        </div>
+        <div class="back face center">
+          <p>Indianapolis is the capital of Indiana.</p>
+          <p>Any content can go here.</p>
         </div>
       </div>
-    </header>
-  </div> <!--container-->
-  <div class="">
-    <section>
-      <h2></h2>
-      <p></p>
-    </section>
-  </div>
+    </div>  
   <?php include '/moduled/footer.php'; ?> <!-- see footer.php for code -->
 </body>
-
 </html>
