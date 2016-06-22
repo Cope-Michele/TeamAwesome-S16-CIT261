@@ -1,32 +1,183 @@
 body{
-  background-color: #fff;}
-#f1_container {
-  position: relative;
-  margin: 10px auto;
-  width: 450px;
-  height: 281px;
-  z-index: 1;}
-#f1_container {
-  perspective: 1000;}
-#f1_card {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 1.0s linear;}
-#f1_container:hover #f1_card {
-  transform: rotateY(180deg);
-  box-shadow: -5px 5px 5px #aaa;}
-.face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  text-align: center;}
-.face.back {
   display: block;
-  transform: rotateY(180deg);
-  box-sizing: border-box;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  background-color: #aaa;}
+  background-image: url(/flashcards/pictures/concreteBG.png);
+  background-repeat: repeat;
+  height: 100%;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.content{
+  margin: 11px auto;
+  width: 400px;
+}
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+	border: 1px solid #ccc;
+	box-shadow: 7px 4px 21px black;
+	padding: 6px 0px 6px 0px;
+}
+
+	.flip-container:hover .flipper,  
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+/* ---------------------------- Indiana -------------------------------------------*/
+.flip-container, .frontIndiana, .back {
+	width: 320px;
+	height: 427px;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.frontIndiana, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.frontIndiana {
+	background: url(/flashcards/pictures/indiana.png) 0 0 no-repeat;
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+}
+
+.frontIndiana .name {
+	font-size: 2em;
+	display: inline-block;
+	background: rgba(33, 33, 33, 0.9);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: 60px;
+	left: 25%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
+/* ---------------------------- California -------------------------------------------*/
+.flip-container, .frontCalifornia, .back {
+	width: 320px;
+	height: 427px;
+}
+
+.frontCalifornia, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.frontCalifornia  {
+	background: url(/flashcards/pictures/california.png) 0 0 no-repeat;
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+
+}
+
+.frontCalifornia .name {
+	font-size: 2em;
+	display: inline-block;
+	background: rgba(33, 33, 33, 0.9);
+	color: #f8f8f8;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	bottom: 60px;
+	left: 25%;
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
+
+/* ---------------------------- anther state goes here -------------------------------*/
+
+.back-logo {
+	position: absolute;
+	top: 40px;
+	left: 90px;
+	width: 160px;
+	height: 117px;
+	background: url(/flashcards/pictures/map.png) 0 0 no-repeat;
+}
+
+.back-title {
+	font-weight: bold;
+	color: #00304a;
+	position: absolute;
+	top: 180px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-shadow: 0.1em 0.1em 0.05em #acd7e5;
+	font-family: Courier;
+	font-size: 2em;
+}
+
+.back p {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 0 20px;
+  font-family: arial;
+  line-height: 2em;
+}
+.small {
+	font-size:x-small;
+}
