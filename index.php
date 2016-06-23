@@ -9,6 +9,7 @@
   <title>Flash Cards</title>
 </head>
 <body>
+<<<<<<< Updated upstream
  <?php include '/moduled/header.php'; ?> <!-- see header.php for code -->
 	<div class="content">
 		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -41,6 +42,28 @@
 		</div><!--flip-container-->
 	</div><!-- content -->
  <?php include '/moduled/footer.php'; ?> <!-- see footer.php for code -->
+=======
+  <div class="container">
+    <?php include '/moduled/header.php'; ?> <!-- see header.php for code -->
+      <div class="">
+        <h2>Home</h2>
+        <div class="" id="">
+          <ul>
+            <li class=""><a href=""><span>first item</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div> <!--container is here-->
+  <div class="">
+    <section>
+      <h2></h2>
+      <p></p>
+    </section>
+  </div>
+  <?php include '/moduled/footer.php'; ?> <!-- see footer.php for code -->
+</body>
+>>>>>>> Stashed changes
 
 </body>
 </html>
