@@ -23,7 +23,8 @@
 		    </div><!--back-->
 		  </div><!--flipper-->
 		</div><!--flip-container--><br>
-		<button type="submit">Next</button>
+		
+		<button type="submit">Next</button><p>button will show next card</p>
 	</div><!--content-->
 	<div class="content">
 		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -40,5 +41,6 @@
 		</div><!--flip-container-->
 	</div><!-- content -->
  <?php include '/moduled/footer.php'; ?> <!-- see footer.php for code -->
+
 </body>
 </html>
