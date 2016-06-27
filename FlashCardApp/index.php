@@ -6,6 +6,9 @@
   <link rel="stylesheet" type="text/css" href="assets/normalize.css">
   <script src="modernizer.js"></script> <!-- for browser compatibility checks NOTE: does not fill in the gaps. see youtube "How to use modernizer - SIMPLIFIED" -->
   <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <script>
+  	//Location for JavaScript - app modififcations
+  </script>
   <title>Flash Cards</title>
 </head>
 <body>
