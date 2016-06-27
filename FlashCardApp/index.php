@@ -8,10 +8,64 @@
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <script>
   	//Location for JavaScript - app modififcations
+  	
+  	//Save to localStorage
+  	function SaveItem(){
+  		
+  		doShowAll();	
+  	}
+  	//Remove from localStorage
+  	function RemoveItem(){
+  		
+  		doShowAll();	
+  	}
+  	//clear localStorage
+  	function ClearAll(){
+  		localStorage.clear();
+  		doShowAll();
+  	}
+  	//display localStorage
+  	function doShowAll(){
+  		if (CheckBrowser()){
+  			//display localStorage
+  		}	
+  	}
+  	//Checks to see if browser is compatable to run localStorage
+  	function CheckBrowser() {
+	    if ('localStorage' in window && window['localStorage'] !== null) {
+        	return true;
+    	    } else {
+        	return false;
+    	    }
+	}
+  	//Any btn's need to be added under function removeMobileOnClick
+  	function removeMobileOnclick() {
+           if(isMobile()) {
+                document.getElementById('btnSave').onclick = '';
+           }
+        }
+        //Checks if user is on mobile device and runs different script
+        function isMobile() {
+           if (navigator.userAgent.match(/Android/i)
+                    || navigator.userAgent.match(/iPhone/i)
+                    || navigator.userAgent.match(/iPad/i)
+                    || navigator.userAgent.match(/iPod/i)
+                    || navigator.userAgent.match(/BlackBerry/i)
+                    || navigator.userAgent.match(/Windows Phone/i)
+                    || navigator.userAgent.match(/Opera Mini/i)
+                    || navigator.userAgent.match(/IEMobile/i)
+                    ) {
+                return true;
+            }
+        }
+        //window.addEventListener('load', removeMobileOnclick);
+        window.onload = function(){
+            removeMobileOnclick();
+        }
   </script>
   <title>Flash Cards</title>
 </head>
-<body>
+<body onload=""> <!-- onload for JavaScript -->
  <?php include '/moduled/header.php'; ?> <!-- see header.php for code -->
 	<div class="content">
 		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
