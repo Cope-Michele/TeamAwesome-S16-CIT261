@@ -7,11 +7,21 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <meta name="Michele Cope, Mikel Butterfield, Kelly Johnson, Cassandra Van Lydegraf" content="Team 5">
+        <link rel="stylesheet" type="text/css" href="flashcard-style.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+        <title>Flashcard App</title>
     </head>
     <body>
-        <h3>State Capital Flash cards</h3>
-        <div id="start"><button type="button" onclick ="alabama()">Get started by clicking here</button></div>
+        <div id="content">
+        <div class="header">
+            <h3>State Capital Flashcards</h3>
+        </div>
+        
+        <div class="flashcard-container">
+            <div id="start"><button type="button" onclick ="alabama()">Get started by clicking here</button></div>
+        </div>
+        
         <div id="score"></div>
         <div id="flashcard"></div>
         <div id="flip"></div>
@@ -805,11 +815,7 @@ function minnesota() {
                 document.getElementById("score").innerHTML = (localStorage.score) + "/50";
             }
 
-
         </script>
-
-        <style>
-
-        </style>
+        </div>
     </body>
 </html>
