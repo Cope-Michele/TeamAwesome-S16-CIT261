@@ -783,6 +783,152 @@ function minnesota() {
                 document.getElementById("wrong").innerHTML = "<button type='button' onclick ='incorrect(); missouri();'>incorrect</button>";
             }
 
+            function missouri() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/missouri.txt", true);
+                txt.send();
+
+                document.getElementById("right").innerHTML = "";
+                document.getElementById("wrong").innerHTML = "";
+                document.getElementById("flip").innerHTML = "<button type='button' onclick ='jefferson-city()'>Flip the card</button>";
+            }
+            function jefferson-city() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/jefferson-city.txt", true);
+                txt.send();
+
+                document.getElementById("flip").innerHTML = "";
+                document.getElementById("right").innerHTML = "<button type='button' onclick ='correct(); montana();' >correct</button>";
+                document.getElementById("wrong").innerHTML = "<button type='button' onclick ='incorrect(); montana();'>incorrect</button>";
+            }
+            
+             function montana() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/montana.txt", true);
+                txt.send();
+
+                document.getElementById("right").innerHTML = "";
+                document.getElementById("wrong").innerHTML = "";
+                document.getElementById("flip").innerHTML = "<button type='button' onclick ='helena()'>Flip the card</button>";
+            }
+            function helena() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/helena.txt", true);
+                txt.send();
+
+                document.getElementById("flip").innerHTML = "";
+                document.getElementById("right").innerHTML = "<button type='button' onclick ='correct(); nebraska();' >correct</button>";
+                document.getElementById("wrong").innerHTML = "<button type='button' onclick ='incorrect(); nebraska();'>incorrect</button>";
+            }           
+
+            function nebraska() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/nebraska.txt", true);
+                txt.send();
+
+                document.getElementById("right").innerHTML = "";
+                document.getElementById("wrong").innerHTML = "";
+                document.getElementById("flip").innerHTML = "<button type='button' onclick ='lincoln()'>Flip the card</button>";
+            }
+            function lincoln() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/lincoln.txt", true);
+                txt.send();
+
+                document.getElementById("flip").innerHTML = "";
+                document.getElementById("right").innerHTML = "<button type='button' onclick ='correct(); nevada();' >correct</button>";
+                document.getElementById("wrong").innerHTML = "<button type='button' onclick ='incorrect(); nevada();'>incorrect</button>";
+            }
+            
+            function nevada() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/nevada.txt", true);
+                txt.send();
+
+                document.getElementById("right").innerHTML = "";
+                document.getElementById("wrong").innerHTML = "";
+                document.getElementById("flip").innerHTML = "<button type='button' onclick ='carson-city()'>Flip the card</button>";
+            }
+            function carson-city() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/carson-city.txt", true);
+                txt.send();
+
+                document.getElementById("flip").innerHTML = "";
+                document.getElementById("right").innerHTML = "<button type='button' onclick ='correct(); new-hampshire();' >correct</button>";
+                document.getElementById("wrong").innerHTML = "<button type='button' onclick ='incorrect(); new-hampshire();'>incorrect</button>";
+            }
+            
+            function new-hampshire() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/new-hampshire.txt", true);
+                txt.send();
+
+                document.getElementById("right").innerHTML = "";
+                document.getElementById("wrong").innerHTML = "";
+                document.getElementById("flip").innerHTML = "<button type='button' onclick ='concord()'>Flip the card</button>";
+            }
+            function concord() {
+                var txt = new XMLHttpRequest();
+                txt.onreadystatechange = function () {
+                    if (txt.readyState == 4 && txt.status == 200) {
+                        document.getElementById("flashcard").innerHTML = txt.responseText;
+                    }
+                };
+                txt.open("GET", "StateCapitaltxt/concord.txt", true);
+                txt.send();
+
+                document.getElementById("flip").innerHTML = "";
+                document.getElementById("right").innerHTML = "<button type='button' onclick ='correct(); new-jersey();' >correct</button>";
+                document.getElementById("wrong").innerHTML = "<button type='button' onclick ='incorrect(); new-jersey();'>incorrect</button>";
+            }            
+            
+            
             
             
 
