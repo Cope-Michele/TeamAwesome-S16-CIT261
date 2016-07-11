@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function alabama() {
     var txt = new XMLHttpRequest();
     txt.onreadystatechange = function () {
@@ -1534,8 +1535,6 @@ function reset() {
     document.getElementById("score").innerHTML = (localStorage.score) + "/50";
 }
 =======
-=======
->>>>>>> APP-UPDATE-7.6.2016
             function alabama() {
                 var txt = new XMLHttpRequest();
                 txt.onreadystatechange = function () {
@@ -3152,6 +3151,6 @@ function wyoming() {
                     localStorage.score = 0;
                     document.getElementById("score").innerHTML = (localStorage.score) + "/50";
                 }
-
+>>>>>>> origin/APP-UPDATE-7.6.2016
 
 

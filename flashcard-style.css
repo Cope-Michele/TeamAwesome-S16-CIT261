@@ -1,18 +1,20 @@
 body{
+<<<<<<< HEAD
     width: 650px;
+=======
     width: 1250px;
+>>>>>>> origin/APP-UPDATE-7.6.2016
     margin: auto;
     padding-top: 50px;
     margin-bottom: -20px;
     font-family: 'Oswald', sans-serif;
+<<<<<<< HEAD
     background-color: #3A3A3C;
     color: #FFFFFF;
 =======
     background-color: #222;
     color: white;
-=======
-    background-color: #222;
-    color: white;
+>>>>>>> origin/APP-UPDATE-7.6.2016
     font-weight: 300;
 }
 
@@ -32,6 +34,7 @@ body{
 
 .flashcard-container {
     border: 1px solid #ccc;
+<<<<<<< HEAD
     box-shadow: 0px 4px 14px #2A2A2C;
     padding: 6px 0px;
     border-radius: 7px;
@@ -47,18 +50,12 @@ body{
     padding: 6px 0px;
     border-radius: 7px   
 >>>>>>> origin/APP-UPDATE-7.6.2016
-=======
-    box-shadow: 0px 4px 14px gray;
-    padding: 6px 0px;
-    border-radius: 7px   
->>>>>>> APP-UPDATE-7.6.2016
 }
 
 #start {
 
 }
 
-<<<<<<< HEAD
 <<<<<<< HEAD
 /*All button's style*/
 #button {
@@ -99,8 +96,7 @@ body{
 
 #nextcard{
     padding: 6px;
-}
-
+=======
 #score {
 
 }  
@@ -123,4 +119,5 @@ body{
 
 #nextcard{
 
+>>>>>>> origin/APP-UPDATE-7.6.2016
 }
