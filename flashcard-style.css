@@ -1,5 +1,5 @@
 body{
-    width: 650px;
+    width: 800px;
     margin: auto;
     padding-top: 50px;
     margin-bottom: -20px;
@@ -12,7 +12,7 @@ body{
 #content{
     margin: auto;
     text-align: center;
-    min-width: 324px;
+    width: 800px;
 }
 
 .header{
@@ -24,26 +24,56 @@ body{
 }
 
 .flashcard-container {
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 14px #2A2A2C;
-    padding: 6px 0px;
+    margin: auto;
+    box-shadow: 0 0 5px #2A2A2C;
     border-radius: 7px;
     background-color: #FFFFFF;
     color: #3A3A3C;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    width: 650px;
+    width:500px;
     height: 300px;
 }
 
-#start {
+#start button{
+    margin-top: 0px;
+    box-shadow: 0 0 5px #555;
+    border-radius: 4px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 175px;
+    padding-right: 175px;
+    background-color: #34C1C4;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: bold;
+    border: none;
+    color: #3A3A3C;
+    font-family: 'Oswald', sans-serif;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    -ms-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
+}
 
+#start button:hover {
+    background-color: #A2FBFC;
+    color: #3A3A3C;
+    -webkit-transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out;
+    -ms-transition: background-color .5s ease-out;
+    transition: background-color .5s ease-out;
 }
 
 /*All button's style*/
 #button {
-    box-shadow: 0px 4px 14px #2A2A2C;
+    margin-top: 25px;
+    box-shadow: 0 0 5px #555;
+    border-radius: 4px;
+    padding: 10px;
     background-color: #34C1C4;
     text-transform: uppercase;
     font-weight: bold;
@@ -52,19 +82,35 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
+#button:hover {
+    background-color: #A2FBFC;
+}
+
 #score {
-    padding: 6px;
+    position: fixed;
+    margin-right: 300px;
 }  
 
 /*<div>*/
 #flashcard {
-    padding: 6px;
+    width: 250px;
+    margin-top: 130px;
+    margin-left: -50px;
+    float: right;
+    font-size: 2em;
 }
 
 #image {
-    /*float:left;*/
+    margin-top: 10px;
+    margin-left: 10px;
+    float:left;
 }
 
+#card-interactions{
+    width: 800px;
+    margin: auto;
+    align-content: center;
+}
 /*<div>*/
 #flip {
     padding: 6px;
