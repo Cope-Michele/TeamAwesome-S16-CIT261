@@ -14,12 +14,10 @@
             </div>
             <div id="score"></div>
             <div class="flashcard-container" ontouchstart="this.classList.toggle('hover');">
-<<<<<<< HEAD
                 <div id="start"><button id='button' type="button" onclick ="alabama()">Get started by clicking here</button></div>
                 <div id='image'></div>
-=======
                 <div id="start"><button type="button" onclick ="alabama()">Get started by clicking here</button></div>
->>>>>>> origin/APP-UPDATE-7.6.2016
+                <div id="start"><button type="button" onclick ="alabama()">Get started by clicking here</button></div>
                 <div id="flashcard"></div>
             </div>
 
