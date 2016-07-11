@@ -1,106 +1,38 @@
-body{
-    width: 650px;
++body{
     width: 1250px;
     margin: auto;
     padding-top: 50px;
     margin-bottom: -20px;
-    font-family: 'Oswald', sans-serif;
-    background-color: #3A3A3C;
-    color: #FFFFFF;
-=======
-    background-color: #222;
-    color: white;
-=======
     background-color: #222;
     color: white;
     font-weight: 300;
 }
 
 #content{
-    margin: auto;
-    text-align: center;
-    min-width: 324px;
+     margin: auto;
+     text-align: center;
+     min-width: 324px;
 }
 
 .header{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: .1px;
-    font-weight: 300;
+     font-family: 'Oswald', sans-serif;
+     font-size: 1.5em;
+     text-transform: uppercase;
+     letter-spacing: .1px;
+     font-weight: 300;
 }
 
 .flashcard-container {
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 14px #2A2A2C;
-    padding: 6px 0px;
-    border-radius: 7px;
-    background-color: #FFFFFF;
-    color: #3A3A3C;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    width: 650px;
-    height: 300px;
-=======
-    box-shadow: 0px 4px 14px gray;
-    padding: 6px 0px;
-    border-radius: 7px   
->>>>>>> origin/APP-UPDATE-7.6.2016
-=======
-    box-shadow: 0px 4px 14px gray;
-    padding: 6px 0px;
-    border-radius: 7px   
->>>>>>> APP-UPDATE-7.6.2016
+     border: 1px solid #ccc;
+     box-shadow: 0px 4px 14px gray;
+     padding: 6px 0px;
+     border-radius: 7px   
 }
 
 #start {
 
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*All button's style*/
-#button {
-    box-shadow: 0px 4px 14px #2A2A2C;
-    background-color: #34C1C4;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    color: #3A3A3C;
-    font-family: 'Oswald', sans-serif;
-}
-
-#score {
-    padding: 6px;
-}  
-
-/*<div>*/
-#flashcard {
-    padding: 6px;
-}
-
-#image {
-    /*float:left;*/
-}
-
-/*<div>*/
-#flip {
-    padding: 6px;
-}
-
-#right {
-    padding: 6px;
-}
-
-#wrong {
-    padding: 6px;
-}
-
-#nextcard{
-    padding: 6px;
-}
-
 #score {
 
 }  
@@ -110,7 +42,7 @@ body{
 }
 
 #flip {
-    
+
 }
 
 #right {
@@ -123,4 +55,4 @@ body{
 
 #nextcard{
 
-}
+} 
