@@ -1,4 +1,5 @@
 function alabama() {
+    reset();
     var txt = new XMLHttpRequest();
     txt.onreadystatechange = function () {
         if (txt.readyState == 4 && txt.status == 200) {
