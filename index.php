@@ -8,29 +8,32 @@
         <title>Flashcard App</title>
     </head>
     <body>
-        
+
         <div id="content">
             <div class="header">
                 <h3>State Capital Flashcards</h3>
             </div>
-            
+
             <div id="score"></div>
-            
+
             <div class="flashcard-container" ontouchstart="this.classList.toggle('hover');">
                 <div id="start"><button id='button' type="button" onclick ="alabama()">Get started by clicking here</button></div>
                 <div id='image'></div>
-                <div id="flashcard"></div>
+                <div id='card-text'>
+                    <div id='text'></div>
+                    <div id="flashcard"></div>
+                </div>
             </div>
-            
+
             <div id="card-interactions">
                 <div id="flip"></div>
                 <div id="right"></div>
                 <div id="wrong"></div>
                 <div id="nextcard"></div>
             </div>
-            
+
             <script src="flashcard-function.js"></script>
         </div>
-        
+
     </body>
 </html>

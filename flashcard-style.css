@@ -92,9 +92,9 @@ body{
 }  
 
 /*<div>*/
-#flashcard {
+#card-text {
     width: 250px;
-    margin-top: 130px;
+    margin-top: 75px;
     margin-left: -50px;
     float: right;
     font-size: 2em;
