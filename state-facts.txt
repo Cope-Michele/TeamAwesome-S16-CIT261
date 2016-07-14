@@ -1,0 +1,102 @@
+[
+    {
+        "state": "Alabama",
+        "fact": "Alabama workers built the first rocket to put humans on the moon."
+    },
+    {
+        "state": "Alaska",
+        "fact": "The United States paid Russia two cents per acre, for Alaska"
+    },
+    {
+        "state": "Arizona",
+        "fact": "Among all of the states, Arizona has the largest percentage of its land designated as Native American lands."
+    }
+    {
+        "state": "Arkansas",
+        "fact": "President Bill Clinton grew up in Hot Springs, Arkansas."
+    }
+    {
+        "state": "California",
+        "fact": "California's Mount Whitney measures as the highest peak in the lower 48 states with a summit at 14,495 feet."
+    }
+    {
+        "state": "Colorado",
+        "fact": "Colorado is the only state in history to turn down hosting the Olympics, in 1976 voters chose not to host the Olympics because of the pollution, population boom, and cost."
+    }
+    {
+        "state": "Connecticut",
+        "fact": "The first telephone book ever issued was published in New Haven, Connecticut in 1878."
+    }
+    {
+        "state": "Delaware",
+        "fact": "Delaware was the first state to ratify the United States constitution. It did so on December 7, 1787."
+    }
+    {
+        "state": "Florida",
+        "fact": "Saint Augustine, Florida is the oldest European settlement in North America."
+    }
+    {
+        "state": "Georgia",
+        "fact": "The pirate Edward "Blackbeard" Teach made a home on Blackbeard Island off the coast of Georgia."
+    }
+    {
+        "state": "Hawaii",
+        "fact": "The Hawaiian Islands are the projecting tops of the biggest mountain range in the world."
+    }
+    {
+        "state": "Idaho",
+        "fact": "Hell's Canyon, Idaho is the deepest gorge in America."
+    }
+    {
+        "state": "Illinois",
+        "fact": "The world's first Skyscraper was built in Chicago, Illinois 1885."
+    }
+    {
+        "state": "Indiana",
+        "fact": "The first long-distance auto race in the U. S. was held May 30, 1911, at the Indianapolis Motor Speedway. The winner averaged 75 miles an hour."
+    }
+    {
+        "state": "Iowa",
+        "fact": "The town of Fort Atkinson was the site of the only fort ever built by the U.S. government to protect one Indian tribe from another."
+    }
+    {
+        "state": "Kansas",
+        "fact": "The first woman mayor in the United States was Susan Madora Salter, elected to office in Argonia, Kansas in 1887."
+    }
+    {
+        "state": "Kentucky",
+        "fact": "Kaolin's Restaraunt Louisville, Kentucky boasts being the inventors of Cheeseburgers."
+    }
+    {
+        "state": "Louisiana",
+        "fact": "Louisiana was named in honor of King Louis XIV."
+    }
+    {
+        "state": "Maine",
+        "fact": "Approximately 90% of the nations lobster supply is caught off the coast of Maine."
+    }
+    {
+        "state": "Maryland",
+        "fact": "Maryland gave up some of it's land to form Washington D.C."
+    }
+    {
+        "state": "Massachusetts",
+        "fact": "Boston, Massachusetts built the first subway system in the United States in 1897."
+    }
+    {
+        "state": "Michigan",
+        "fact": "Standing anywhere in the state a person is within 85 miles of one of the Great Lakes."
+    }
+    {
+        "state": "Minnesota",
+        "fact": "The stapler was invented in Spring Valley, Minnesota."
+    }
+    {
+        "state": "Mississippi",
+        "fact": "University of Mississippi Medical Center accomplished the world's first human lung transplant and the world's first heart transplant."
+    }
+    {
+        "state": "Missouri",
+        "fact": "The first successful parachute jump to be made from a moving airplane was made in St. Louis, Missouri in 1912."
+    }
+]
