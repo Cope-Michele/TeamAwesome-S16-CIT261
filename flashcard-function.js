@@ -1,3 +1,9 @@
+var startingScore = document.getElementById("start");
+
+startingScore.style.color = "#FN7899";
+
+window.onload = correct(startingScore);
+
 function alabama() {
     reset();
     var txt = new XMLHttpRequest();
