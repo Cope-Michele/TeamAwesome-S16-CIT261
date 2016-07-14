@@ -68,6 +68,12 @@ body{
     transition: background-color .5s ease-out;
 }
 
+.last-score-view{
+    color: white;
+    position: relative;
+    top: -265px;
+}
+
 /*All button's style*/
 #button {
     margin-top: 25px;
