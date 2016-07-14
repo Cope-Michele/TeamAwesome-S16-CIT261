@@ -103,7 +103,16 @@ body{
     margin-top: 75px;
     margin-left: -50px;
     float: right;
+    /*font-size: 2em;*/
+}
+
+#flashcard {
     font-size: 2em;
+}
+
+#text {
+    font-size: .9em;
+    margin: 1em;
 }
 
 #image {
