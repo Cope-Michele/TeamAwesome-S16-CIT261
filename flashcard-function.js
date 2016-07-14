@@ -6,7 +6,7 @@ span.setAttributeNode(classAttr);
 var idAttr = document.createAttribute("id");
 idAttr.value = "score-preview";
 span.setAttributeNode(idAttr);
-var spanContent = document.createTextNode("Your score: " + (localStorage.score) + "/50");
+var spanContent = document.createTextNode("Your last score: " + (localStorage.score) + "/50");
 span.appendChild(spanContent);
 
 startingScore.appendChild(span);
@@ -1645,7 +1645,7 @@ function incorrect() {
 }
 function reset() {
     localStorage.score = 0;
-    document.getElementById("score").innerHTML = (localStorage.score) + "/50";
+    document.getElementById("score").innerHTML = "Your score: " + (localStorage.score) + "/50";
 }
 
 

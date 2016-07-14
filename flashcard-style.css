@@ -95,6 +95,10 @@ body{
 #score {
     position: fixed;
     margin-right: 300px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 1em;
 }  
 
 /*<div>*/
