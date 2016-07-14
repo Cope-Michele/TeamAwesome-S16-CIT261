@@ -1,3 +1,16 @@
+var startingScore = document.getElementById("start");
+var span = document.createElement("span");
+var classAttr = document.createAttribute("class");
+classAttr.value = "last-score-view";
+span.setAttributeNode(classAttr);
+var idAttr = document.createAttribute("id");
+idAttr.value = "score-preview";
+span.setAttributeNode(idAttr);
+var spanContent = document.createTextNode("Your score: " + (localStorage.score) + "/50");
+span.appendChild(spanContent);
+
+startingScore.appendChild(span);
+
 function alabama() {
     reset();
     var txt = new XMLHttpRequest();
