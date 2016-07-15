@@ -4,8 +4,8 @@ body{
     padding-top: 50px;
     margin-bottom: -20px;
     font-family: 'Oswald', sans-serif;
-    background-color: #3A3A3C;
-    color: #FFFFFF;
+    background-image: url(bg.png);
+    background-repeat: repeat;
     font-weight: 300;
 }
 
@@ -13,39 +13,48 @@ body{
     margin: auto;
     text-align: center;
     width: 800px;
-}
+    background-image: url(bg.png);}
 
 .header{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
+
+    font-size: 2em;
     letter-spacing: .1px;
     font-weight: 300;
-}
 
+}
+h3{
+
+  display: block; text-decoration: none;
+  font: Tahoma, Helvetica, Arial, Sans-Serif;
+  text-align: center;
+  color: #222; text-shadow: 0px 2px 3px #555;
+
+
+}
 .flashcard-container {
     margin: auto;
-    box-shadow: 0 0 5px #2A2A2C;
-    border-radius: 7px;
-    background-color: #FFFFFF;
-    color: #3A3A3C;
+  background: #222; padding: 20px;/* color of state and facts */ color: #555; text-shadow: 0px 2px 3px #171717;
+  -webkit-box-shadow: 0px 2px #555;
+  -moz-box-shadow: 0px 2px #555;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10ox;
+    border-radius: 15px;
     font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     width:500px;
-    height: 300px;
+    height: 310px;
 }
 
 #start button{
     margin-top: 0px;
     box-shadow: 0 0 5px #555;
-    border-radius: 4px;
+    border-radius: 10px;
     padding-top: 90px;
     padding-bottom: 90px;
     padding-left: 175px;
-    padding-right: 175px;
-    background-color: #34C1C4;
+    padding-right: 124px;
     text-transform: uppercase;
+
     font-size: 1.8em;
     font-weight: bold;
     border: none;
@@ -56,10 +65,13 @@ body{
     -o-transition: background-color .5s ease-out;
     -ms-transition: background-color .5s ease-out;
     transition: background-color .5s ease-out;
+
+    color: #222; text-shadow: 0px 2px 3px #555;
+
 }
 
 #start button:hover {
-    background-color: #A2FBFC;
+    background-color: #555;
     color: #3A3A3C;
     -webkit-transition: background-color .5s ease-out;
     -moz-transition: background-color .5s ease-out;
@@ -67,9 +79,44 @@ body{
     -ms-transition: background-color .5s ease-out;
     transition: background-color .5s ease-out;
 }
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
 
 .last-score-view{
-    color: white;
+    color: #fff;
     position: relative;
     top: -265px;
 }
@@ -78,18 +125,19 @@ body{
 #button {
     margin-top: 25px;
     box-shadow: 0 0 5px #555;
-    border-radius: 4px;
+    border-radius: 60px;
     padding: 10px;
     background-color: #34C1C4;
-    text-transform: uppercase;
     font-weight: bold;
     border: none;
-    color: #3A3A3C;
+    color: #555;
+   font-size: 1em;
     font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 
 #button:hover {
-    background-color: #A2FBFC;
+    background-color: #A2FBFC; /*flip card, correct, incorrect*/
 }
 
 #score {
@@ -99,23 +147,23 @@ body{
     text-transform: uppercase;
     letter-spacing: .5px;
     font-size: 1em;
-}  
+}
 
 /*<div>*/
 #card-text {
     width: 250px;
-    margin-top: 75px;
+    margin-top: 0px;
     margin-left: -50px;
     float: right;
     /*font-size: 2em;*/
 }
 
 #flashcard {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 #text {
-    font-size: .9em;
+    font-size: 1.4em;
     margin: 1em;
 }
 
@@ -131,12 +179,16 @@ body{
     align-content: center;
 }
 
-.last-score{
-    color: red;
-}
+
 /*<div>*/
 #flip {
     padding: 6px;
+  color:#676c6c;
+  text-shadow: 3px 4px 5px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+
 }
 
 #right {
@@ -144,6 +196,7 @@ body{
     padding-left: 6px;
     padding-right: 6px;
     padding-bottom: 6px;
+  color: red;
 }
 
 #wrong {
