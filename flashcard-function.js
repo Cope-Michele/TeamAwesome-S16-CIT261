@@ -22,7 +22,7 @@ function alabama() {
     txt.open("GET", "StateCapitaltxt/Alabama.txt", true);
     txt.send();
     document.getElementById("start").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='montgomery()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/alabama.png' alt='Alabama'></img>";
 }
@@ -55,7 +55,7 @@ function alaska() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='juneau()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/alaska.png' alt='Alaska'></img>";
 }
@@ -87,7 +87,7 @@ function arizona() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='phoenix()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/arizona.png' alt='Arizona'></img>";
 }
@@ -119,7 +119,7 @@ function arkansas() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='littlerock()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/arkansas.png' alt='Arkansas'></img>";
 }
@@ -150,7 +150,7 @@ function california() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='sacramento()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/california.png' alt='California'></img>";
 }
@@ -182,7 +182,7 @@ function colorado() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='denver()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/colorado.png' alt='Colorado'></img>";
 }
@@ -214,7 +214,7 @@ function connecticut() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='hartford()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/connecticut.png' alt='Connecticut'></img>";
 }
@@ -246,7 +246,7 @@ function delaware() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='dover()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/delaware.png' alt='Delaware'></img>";
 }
@@ -278,7 +278,7 @@ function florida() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='tallahassee()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/florida.png' alt='Florida'></img>";
 }
@@ -310,7 +310,7 @@ function georgia() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='atlanta()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/georgia.png' alt='Georgia'></img>";
 }
@@ -342,7 +342,7 @@ function hawaii() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='honolulu()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/hawaii.png' alt='Hawaii'></img>";
 }
@@ -374,7 +374,7 @@ function idaho() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='boise()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/idaho.png' alt='Idaho'></img>";
 }
@@ -406,7 +406,7 @@ function illinois() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='springfield()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/illinois.png' alt='Illinois'></img>";
 }
@@ -438,7 +438,7 @@ function indiana() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='indianapolis()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/indiana.png' alt='Indiana'></img>";
 }
@@ -470,7 +470,7 @@ function iowa() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='desmoines()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/iowa.png' alt='Iowa'></img>";
 }
@@ -502,7 +502,7 @@ function kansas() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='topeka()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/kansas.png' alt='Kansas'></img>";
 }
@@ -534,7 +534,7 @@ function kentucky() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='frankfort()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/kentucky.png' alt='Kentucky'></img>";
 }
@@ -566,7 +566,7 @@ function louisiana() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='batonrouge()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/louisiana.png' alt='Louisiana'></img>";
 }
@@ -598,7 +598,7 @@ function maine() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='augusta()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/maine.png' alt='Maine'></img>";
 }
@@ -630,7 +630,7 @@ function maryland() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='annapolis()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/maryland.png' alt='Maryland'></img>";
 }
@@ -662,7 +662,7 @@ function massachusetts() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='boston()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/massachussets.png' alt='Massachusetts'></img>";
 }
@@ -694,7 +694,7 @@ function michigan() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='lansing()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/michigan.png' alt='Michigan'></img>";
 }
@@ -726,7 +726,7 @@ function minnesota() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='stpaul()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/minnesota.png' alt='Minnesota'></img>";
 }
@@ -758,7 +758,7 @@ function mississippi() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='jackson()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/mississippi.png' alt='Mississipi'></img>";
 }
@@ -790,7 +790,7 @@ function missouri() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='jeffersoncity()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/missouri.png' alt='Missouri'></img>";
 }
@@ -822,7 +822,7 @@ function montana() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='helena()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/montana.png' alt='Montana'></img>";
 }
@@ -837,7 +837,7 @@ function helena() {
     txt.open("GET", "StateCapitaltxt/Helena.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Montana's first territorial capital, Bannack, has been preserved as a ghost town state park";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); nebraska();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); nebraska();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/montana.png' alt='Montana'></img>";
@@ -854,7 +854,7 @@ function nebraska() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='lincoln()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/nebraska.png' alt='Nebraska'></img>";
 }
@@ -869,7 +869,7 @@ function lincoln() {
     txt.open("GET", "StateCapitaltxt/Lincoln.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "World's largest hand-planted forest is Halsey National Forrest";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); nevada();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); nevada();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/nebraska.png' alt='Nebraska'></img>";
@@ -886,7 +886,7 @@ function nevada() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='carsoncity()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/nevada.png' alt='Nevada'></img>";
 }
@@ -901,7 +901,7 @@ function carsoncity() {
     txt.open("GET", "StateCapitaltxt/Carson City.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Nevada is the 2nd largest gold-producing state in the world right behind South Africa.";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newhampshire();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newhampshire();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/nevada.png' alt='Nevada'></img>";
@@ -918,7 +918,7 @@ function newhampshire() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='concord()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-hampshire.png' alt='New Hampshire'></img>";
 
@@ -934,7 +934,7 @@ function concord() {
     txt.open("GET", "StateCapitaltxt/Concord.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "The first free public library in the United States was established at Peterborough in 1833.";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newjersey();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newjersey();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-hampshire.png' alt='New Hampshire'></img>";
@@ -951,7 +951,7 @@ function newjersey() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='trenton()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-jersey.png' alt='New Jersey'></img>";
 }
@@ -966,7 +966,7 @@ function trenton() {
     txt.open("GET", "StateCapitaltxt/Trenton.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Atlantic City is where the street names came from for the game monopoly";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newmexico();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newmexico();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-jersey.png' alt='New Jersey'></img>";
@@ -983,7 +983,7 @@ function newmexico() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='santafe()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-mexico.png' alt='New Mexico'></img>";
 }
@@ -998,7 +998,7 @@ function santafe() {
     txt.open("GET", "StateCapitaltxt/Santa Fe.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "White Sands National Monument is a desert, not of sand, but of gleaming white gypsum crystals";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newyork();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newyork();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-mexico.png' alt='New Mexico'></img>";
@@ -1015,7 +1015,7 @@ function newyork() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='albany()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-york.png' alt='New York'></img>";
 }
@@ -1030,7 +1030,7 @@ function albany() {
     txt.open("GET", "StateCapitaltxt/Albany.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "The first American chess tournament was held in New York in 1843";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); northcarolina();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); northcarolina();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-york.png' alt='New York'></img>";
@@ -1047,7 +1047,7 @@ function northcarolina() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='raleigh()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/north-carolina.png' alt='North Carolina'></img>";
 }
@@ -1062,7 +1062,7 @@ function raleigh() {
     txt.open("GET", "StateCapitaltxt/Raleigh.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Krispy Kreme Doughnut was founded here. That's right. That delicous donught.";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); northdakota();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); northdakota();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/north-carolina.png' alt='North Carolina'></img>";
@@ -1079,7 +1079,7 @@ function northdakota() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='bismarck()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/north-dakota.png' alt='North Dakota'></img>";
 }
@@ -1094,7 +1094,7 @@ function bismarck() {
     txt.open("GET", "StateCapitaltxt/Bismarck.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "North Dakota passed a bill in 1987 making English the official state language";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); ohio();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); ohio();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/north-dakota.png' alt='North Dakota'></img>";
@@ -1111,7 +1111,7 @@ function ohio() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='columbus()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/ohio.png' alt='Ohio'></img>";
 }
@@ -1126,7 +1126,7 @@ function columbus() {
     txt.open("GET", "StateCapitaltxt/Columbus.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Cleveland boasts America's first traffic light. It began on Aug. 5, 1914";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); oklahoma();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); oklahoma();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/ohio.png' alt='Ohio'></img>";
@@ -1143,7 +1143,7 @@ function oklahoma() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='oklahomacity()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/oklahoma.png' alt='Oklahoma'></img>";
 }
@@ -1158,7 +1158,7 @@ function oklahomacity() {
     txt.open("GET", "StateCapitaltxt/Oklahoma City.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "An Oklahoman, Sylvan Goldman, invented the first shopping cart";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); oregon();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); oregon();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/oklahoma.png' alt='Oklahoma'></img>";
@@ -1175,7 +1175,7 @@ function oregon() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='salem()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/oregon.png' alt='Oregon'></img>";
 }
@@ -1190,7 +1190,7 @@ function salem() {
     txt.open("GET", "StateCapitaltxt/Salem.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Oregon has more ghost towns than any other state.";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); pennsylvania();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); pennsylvania();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/oregon.png' alt='Oregon'></img>";
@@ -1207,7 +1207,7 @@ function pennsylvania() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='harrisburg()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/pennsylvania.png' alt='Pennsylvania'></img>";
 }
@@ -1222,7 +1222,7 @@ function harrisburg() {
     txt.open("GET", "StateCapitaltxt/Harrisburg.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Little League Baseball's first World Series was held in 1946 in Williamsport.";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); rhodeisland();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); rhodeisland();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/pennsylvania.png' alt='Pennsylvania'></img>";
@@ -1239,7 +1239,7 @@ function rhodeisland() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='providence()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/rhode-island.png' alt='Rhode Island'></img>";
 }
@@ -1254,7 +1254,7 @@ function providence() {
     txt.open("GET", "StateCapitaltxt/Providence.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Rhode Island was the last of the original thirteen colonies to become a state";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); southcarolina();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); southcarolina();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/rhode-island.png' alt='Rhode Island'></img>";
@@ -1271,7 +1271,7 @@ function southcarolina() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='columbia()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/south-carolina.png' alt='South Carolina'></img>";
 }
@@ -1286,7 +1286,7 @@ function columbia() {
     txt.open("GET", "StateCapitaltxt/Columbia.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "The Board of Public Works in Gaffney built an elevated water storage tank in the shape of a peach in 1981";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); southdakota();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); southdakota();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/south-carolina.png' alt='South Carolina'></img>";
@@ -1303,7 +1303,7 @@ function southdakota() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='pierre()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/south-dakota.png' alt='South Dakota'></img>";
 }
@@ -1318,7 +1318,7 @@ function pierre() {
     txt.open("GET", "StateCapitaltxt/Pierre.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "South Dakota houses the world's largest natural, indoor warmwater pool, Evans' Plunge in Hot Springs";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); tennessee();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); tennessee();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/south-dakota.png' alt='South Dakota'></img>";
@@ -1334,8 +1334,8 @@ function tennessee() {
     txt.open("GET", "StateCapitaltxt/Tennessee.txt", true);
     txt.send();
     document.getElementById("right").innerHTML = "";
-    document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("wrong").innerHTML = " ";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='nashville()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/tennessee.png' alt='Tennessee'></img>";
 }
@@ -1350,7 +1350,7 @@ function nashville() {
     txt.open("GET", "StateCapitaltxt/Nashville.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Graceland, the estate and gravesite of Elvis Presley";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); texas();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); texas();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/tennessee.png' alt='Tennessee'></img>";
@@ -1367,7 +1367,7 @@ function texas() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='austin()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/texas.png' alt='Texas'></img>";
 }
@@ -1382,7 +1382,7 @@ function austin() {
     txt.open("GET", "StateCapitaltxt/Austin.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "NASA, in Houston, headquarters for all piloted U.S. space projects";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); utah();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); utah();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/texas.png' alt='Texas'></img>";
@@ -1399,7 +1399,7 @@ function utah() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='saltlakecity()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/utah.png' alt='Utah'></img>";
 }
@@ -1414,7 +1414,7 @@ function saltlakecity() {
     txt.open("GET", "StateCapitaltxt/Salt Lake City.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Rainbow Bridge, the largest natural stone bridge in the world, 290 feet high, 275 feet across";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); vermont();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect();vermont();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/utah.png' alt='Utah'></img>";
@@ -1431,7 +1431,7 @@ function vermont() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='montpelier()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/vermont.png' alt='Vermont'></img>";
 }
@@ -1446,7 +1446,7 @@ function montpelier() {
     txt.open("GET", "StateCapitaltxt/Montpelier.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "The largest production of maple syrup in the U.S.";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); virginia();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); virginia();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/vermont.png' alt='Vermont'></img>";
@@ -1463,7 +1463,7 @@ function virginia() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='richmond()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/virginia.png' alt='Virginia'></img>";
 }
@@ -1477,7 +1477,7 @@ function richmond() {
     txt.open("GET", "StateCapitaltxt/Richmond.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "The only full-length statue of George Washington, placed in capitol in 1796";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); washington();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); washington();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/virginia.png' alt='Virginia'></img>";
@@ -1494,7 +1494,7 @@ function washington() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='olympia()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/washington.png' alt='Washington'></img>";
 }
@@ -1509,7 +1509,7 @@ function olympia() {
     txt.open("GET", "StateCapitaltxt/Olympia.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Lunar Rover, the vehicle used by astronauts on the moon; Boeing, in Seattle, makes aircraft and spacecraft";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); westvirgina();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); westvirgina();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/washington.png' alt='Washington'></img>";
@@ -1526,7 +1526,7 @@ function westvirgina() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='charleston()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/west-virginia.png' alt='West Virginia'></img>";
 }
@@ -1540,7 +1540,7 @@ function charleston() {
     txt.open("GET", "StateCapitaltxt/Charleston.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "Marbles; most of the country's glass marbles made around Parkersburg";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); wisconsin();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); wisconsin();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/west-virginia.png' alt='West Virginia'></img>";
@@ -1557,7 +1557,7 @@ function wisconsin() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='madison()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/wisconson.png' alt='Wisconson'></img>";
 }
@@ -1572,7 +1572,7 @@ function madison() {
     txt.open("GET", "StateCapitaltxt/Madison.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "The typewriter, invented in Milwaukee in 1867";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); wyoming();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); wyoming();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/wisconson.png' alt='Wisconson'></img>";
@@ -1589,7 +1589,7 @@ function wyoming() {
     txt.send();
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("text").innerHTML = "What is the captail of";
+    document.getElementById("text").innerHTML = "What is the capital of";
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='cheyenne()'>Flip the card</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/whyoming.png' alt='Wyoming'></img>";
 }
@@ -1604,7 +1604,7 @@ function cheyenne() {
     txt.open("GET", "StateCapitaltxt/Cheyenne.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
+    document.getElementById("text").innerHTML = "The 'Register of the Desert,' a huge granite boulder covering 27 acres with 5,000 early pioneer names carved on it";
     document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); finished();' >correct</button>";
     document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); finished();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/whyoming.png' alt='Wyoming'></img>";
@@ -1613,7 +1613,8 @@ function cheyenne() {
 function finished() {
     document.getElementById("right").innerHTML = "";
     document.getElementById("wrong").innerHTML = "";
-    document.getElementById("score").innerHTML = "";  
+    document.getElementById("score").innerHTML = "";
+    document.getElementById("text").innerHTML = "";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/united-states.png' alt='United States'></img>";
     document.getElementById("flashcard").innerHTML = "Your final score: " + (localStorage.score) + "/50";
     ;
