@@ -16,103 +16,104 @@ body{
     background-image: url(bg.png);}
 
 .header{
-
     font-size: 2em;
     letter-spacing: .1px;
     font-weight: 300;
-
 }
+
 h3{
-
-  display: block; text-decoration: none;
-  font: Tahoma, Helvetica, Arial, Sans-Serif;
-  text-align: center;
-  color: #222; text-shadow: 0px 2px 3px #555;
-
-
+    display: block; 
+    text-decoration: none;
+    font: Tahoma, Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: #222; 
+    text-shadow: 0px 2px 3px #555;
 }
+
 .flashcard-container {
     margin: auto;
-  background: #222; padding: 20px;/* color of state and facts */ color: #555; text-shadow: 0px 2px 3px #171717;
-  -webkit-box-shadow: 0px 2px #555;
-  -moz-box-shadow: 0px 2px #555;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10ox;
+    background: #222; 
+    padding: 20px;/* color of state and facts */ 
+    color: #555; 
     border-radius: 15px;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
-    width:500px;
-    height: 310px;
+    width:550px;
+    height: 325px;
+    text-shadow: 0px 2px 3px #171717;
+    
+    -webkit-box-shadow: 0px 2px #555;
+    -moz-box-shadow: 0px 2px #555;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10ox;
 }
 
 #start button{
     margin-top: 0px;
     box-shadow: 0 0 5px #555;
     border-radius: 10px;
-    padding-top: 90px;
-    padding-bottom: 135px;
-    padding-left: 175px;
-    padding-right: 124px;
+    padding: 120px;
     text-transform: uppercase;
-
     font-size: 1.8em;
     font-weight: bold;
     border: none;
     color: #3A3A3C;
     font-family: 'Oswald', sans-serif;
+    color: #222; 
+    text-shadow: 0px 0px 3px #555;
+    
     -webkit-transition: background-color .5s ease-out;
     -moz-transition: background-color .5s ease-out;
     -o-transition: background-color .5s ease-out;
     -ms-transition: background-color .5s ease-out;
     transition: background-color .5s ease-out;
-
-    color: #222; text-shadow: 0px 2px 3px #555;
-
 }
 
 #start button:hover {
     background-color: #555;
     color: #3A3A3C;
+    
     -webkit-transition: background-color .5s ease-out;
     -moz-transition: background-color .5s ease-out;
     -o-transition: background-color .5s ease-out;
     -ms-transition: background-color .5s ease-out;
     transition: background-color .5s ease-out;
 }
-@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+    @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+    @-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+    @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 
 .fade-in {
     opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time */
     -moz-animation:fadeIn ease-in 1;
     animation:fadeIn ease-in 1;
 
     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
     -moz-animation-fill-mode:forwards;
     animation-fill-mode:forwards;
-
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
+    
+    -webkit-animation-duration:.5s;
+    -moz-animation-duration:.5s;
+    animation-duration:.5s;
 }
 
 .fade-in.one {
--webkit-animation-delay: 0.7s;
--moz-animation-delay: 0.7s;
-animation-delay: 0.7s;
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
 }
 .fade-in.two {
--webkit-animation-delay: 1.2s;
--moz-animation-delay:1.2s;
-animation-delay: 1.2s;
+-webkit-animation-delay: .8s;
+-moz-animation-delay: .8s;
+animation-delay: .8s;
 }
 
 .fade-in.three {
--webkit-animation-delay: 1.6s;
--moz-animation-delay: 1.6s;
-animation-delay: 1.6s;
+-webkit-animation-delay: .8s;
+-moz-animation-delay: .8s;
+animation-delay: .8s;
 }
 
 .last-score-view{
@@ -131,7 +132,7 @@ animation-delay: 1.6s;
     font-weight: bold;
     border: none;
     color: #555;
-   font-size: 1em;
+    font-size: 1em;
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
@@ -142,24 +143,40 @@ animation-delay: 1.6s;
 
 #score {
     position: fixed;
+    width: 100px;
+    margin-top: 25px;
     margin-right: 300px;
-    margin-top: 50px;
     text-transform: uppercase;
     letter-spacing: .5px;
     font-size: 1em;
+    color: #888;
+    font-weight: 500;
 }
 
-/*<div>*/
+.final-score{
+    margin-top: 65px;
+    margin-left: -120px;
+    width: 200px;
+}
+
+#image.final-image{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
 #card-text {
+    position: relative;
     width: 250px;
-    margin-top: 0px;
-    margin-left: -50px;
-    float: right;
-    /*font-size: 2em;*/
+    margin-top: -235px;
+    margin-left: 285px;
+
 }
 
 #flashcard {
-    font-size: 3em;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 #text {
@@ -168,9 +185,9 @@ animation-delay: 1.6s;
 }
 
 #image {
-    margin-top: 10px;
-    margin-left: 10px;
-    float:left;
+    position: relative;
+    margin-top: 15px;
+    margin-left: -115px;
 }
 
 #card-interactions{
@@ -179,14 +196,12 @@ animation-delay: 1.6s;
     align-content: center;
 }
 
-
-/*<div>*/
 #flip {
     padding: 6px;
-  color:#676c6c;
-  text-shadow: 3px 4px 5px rgba(255,255,255,0.5);
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
+    color:#676c6c;
+    text-shadow: 3px 4px 5px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
           background-clip: text;
 
 }
@@ -196,7 +211,7 @@ animation-delay: 1.6s;
     padding-left: 6px;
     padding-right: 6px;
     padding-bottom: 6px;
-  color: red;
+    color: red;
 }
 
 #wrong {
