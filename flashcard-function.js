@@ -6,7 +6,7 @@ span.setAttributeNode(classAttr);
 var idAttr = document.createAttribute("id");
 idAttr.value = "score-preview";
 span.setAttributeNode(idAttr);
-var spanContent = document.createTextNode("Your last score " + (localStorage.score) + "/50");
+var spanContent = document.createTextNode("Your last score: " + (localStorage.score) + "/50");
 span.appendChild(spanContent);
 
 startingScore.appendChild(span);
@@ -39,8 +39,8 @@ function montgomery() {
 
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Alabama workers built the first rocket to put humans on the moon.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); alaska();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); alaska();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); alaska();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); alaska();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/alabama.png' alt='Alabama'></img>";
 }
 
@@ -71,8 +71,8 @@ function juneau() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The United States paid Russia two cents per acre, for Alaska.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); arizona();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); arizona();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); arizona();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); arizona();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/alaska.png' alt='Alaska'></img>";
 }
 
@@ -102,9 +102,9 @@ function phoenix() {
     txt.open("GET", "StateCapitaltxt/Phoenix.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "Arizona has the largest percentage of its land designated as Native American lands.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); arkansas();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); arkansas();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "Among all of the states, Arizona has the largest percentage of its land designated as Native American lands.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); arkansas();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); arkansas();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/arizona.png' alt='Arizona'></img>";
 }
 
@@ -134,8 +134,8 @@ function littlerock() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "President Bill Clinton grew up in Hot Springs, Arkansas.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); california();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); california();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); california();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); california();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/arkansas.png' alt='Arkansas'></img>";
 }
 
@@ -166,8 +166,8 @@ function sacramento() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "California's Mount Whitney measures as the highest peak in the lower 48 states with a summit at 14,495 feet.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); colorado();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); colorado();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); colorado();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); colorado();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/california.png' alt='California'></img>";
 }
 
@@ -197,9 +197,9 @@ function denver() {
     txt.open("GET", "StateCapitaltxt/Denver.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "Colorado is the only state in history to turn down hosting the Olympics.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); connecticut();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); connecticut();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "Colorado is the only state in history to turn down hosting the Olympics, in 1976 voters chose not to host the Olympics because of the pollution, population boom, and cost.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); connecticut();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); connecticut();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/colorado.png' alt='Colorado'></img>";
 }
 
@@ -230,8 +230,8 @@ function hartford() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The first telephone book ever issued was published in New Haven, Connecticut in 1878.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); delaware();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); delaware();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); delaware();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); delaware();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/connecticut.png' alt='Connecticut'></img>";
 }
 
@@ -262,8 +262,8 @@ function dover() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Delaware was the first state to ratify the United States constitution. It did so on December 7, 1787.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); florida();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); florida();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); florida();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); florida();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/delaware.png' alt='Delaware'></img>";
 }
 
@@ -294,8 +294,8 @@ function tallahassee() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Saint Augustine, Florida is the oldest European settlement in North America.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); georgia();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); georgia();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); georgia();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); georgia();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/florida.png' alt='Florida'></img>";
 }
 
@@ -326,8 +326,8 @@ function atlanta() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The pirate Edward 'Blackbeard' Teach made a home on Blackbeard Island off the coast of Georgia.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); hawaii();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); hawaii();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); hawaii();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); hawaii();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/georgia.png' alt='Georgia'></img>";
 }
 
@@ -358,8 +358,8 @@ function honolulu() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The Hawaiian Islands are the projecting tops of the biggest mountain range in the world.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); idaho();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); idaho();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); idaho();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); idaho();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/hawaii.png' alt='Hawaii'></img>";
 }
 
@@ -390,8 +390,8 @@ function boise() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Hell's Canyon, Idaho is the deepest gorge in America.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); illinois();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); illinois();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); illinois();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); illinois();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/idaho.png' alt='Idaho'></img>";
 }
 
@@ -422,8 +422,8 @@ function springfield() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The world's first Skyscraper was built in Chicago, Illinois 1885.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); indiana();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); indiana();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); indiana();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); indiana();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/illinois.png' alt='Illinois'></img>";
 }
 
@@ -453,9 +453,9 @@ function indianapolis() {
     txt.open("GET", "StateCapitaltxt/Indianapolis.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "The first long-distance auto race in the U. S. was held in 1911, at the Indianapolis Motor Speedway. The winner averaged 75 miles an hour.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); iowa();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); iowa();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "The first long-distance auto race in the U. S. was held May 30, 1911, at the Indianapolis Motor Speedway. The winner averaged 75 miles an hour.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); iowa();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); iowa();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/indiana.png' alt='Indiana'></img>";
 }
 
@@ -486,8 +486,8 @@ function desmoines() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The town of Fort Atkinson was the site of the only fort ever built by the U.S. government to protect one Indian tribe from another.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); kansas();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); kansas();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); kansas();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); kansas();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/iowa.png' alt='Iowa'></img>";
 }
 
@@ -518,8 +518,8 @@ function topeka() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The first woman mayor in the United States was Susan Madora Salter, elected to office in Argonia, Kansas in 1887.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); kentucky();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); kentucky();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); kentucky();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); kentucky();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/kansas.png' alt='Kansas'></img>";
 }
 
@@ -550,8 +550,8 @@ function frankfort() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Kaolin's Restaraunt Louisville, Kentucky boasts being the inventors of Cheeseburgers.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); louisiana();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); louisiana();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); louisiana();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); louisiana();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/kentucky.png' alt='Kentucky'></img>";
 }
 
@@ -582,8 +582,8 @@ function batonrouge() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Louisiana was named in honor of King Louis XIV.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); maine();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); maine();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); maine();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); maine();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/louisiana.png' alt='Louisiana'></img>";
 }
 
@@ -614,8 +614,8 @@ function augusta() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Approximately 90% of the nations lobster supply is caught off the coast of Maine.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); maryland();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); maryland();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); maryland();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); maryland();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/maine.png' alt='Maine'></img>";
 }
 
@@ -646,8 +646,8 @@ function annapolis() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Maryland gave up some of it's land to form Washington D.C.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); massachusetts();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); massachusetts();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); massachusetts();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); massachusetts();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/maryland.png' alt='Maryland'></img>";
 }
 
@@ -678,8 +678,8 @@ function boston() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Boston, Massachusetts built the first subway system in the United States in 1897.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); michigan();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); michigan();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); michigan();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); michigan();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/massachussets.png' alt='Massachusetts'></img>";
 }
 
@@ -710,8 +710,8 @@ function lansing() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Standing anywhere in the state a person is within 85 miles of one of the Great Lakes.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); minnesota();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); minnesota();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); minnesota();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); minnesota();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/michigan.png' alt='Michigan'></img>";
 }
 
@@ -742,8 +742,8 @@ function stpaul() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The stapler was invented in Spring Valley, Minnesota.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); mississippi();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); mississippi();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); mississippi();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); mississippi();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/minnesota.png' alt='Minnesota'></img>";
 }
 
@@ -774,8 +774,8 @@ function jackson() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "University of Mississippi Medical Center accomplished the world's first human lung transplant and the world's first heart transplant.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); missouri();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); missouri();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); missouri();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); missouri();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/mississippi.png' alt='Mississipi'></img>";
 }
 
@@ -806,8 +806,8 @@ function jeffersoncity() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The first successful parachute jump to be made from a moving airplane was made in St. Louis, Missouri in 1912.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); montana();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); montana();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); montana();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); montana();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/missouri.png' alt='Missouri'></img>";
 }
 
@@ -838,8 +838,8 @@ function helena() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Montana's first territorial capital, Bannack, has been preserved as a ghost town state park";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); nebraska();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); nebraska();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); nebraska();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); nebraska();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/montana.png' alt='Montana'></img>";
 }
 
@@ -870,8 +870,8 @@ function lincoln() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "World's largest hand-planted forest is Halsey National Forrest";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); nevada();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); nevada();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); nevada();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); nevada();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/nebraska.png' alt='Nebraska'></img>";
 }
 
@@ -902,8 +902,8 @@ function carsoncity() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Nevada is the 2nd largest gold-producing state in the world right behind South Africa.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newhampshire();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newhampshire();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newhampshire();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newhampshire();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/nevada.png' alt='Nevada'></img>";
 }
 
@@ -935,8 +935,8 @@ function concord() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The first free public library in the United States was established at Peterborough in 1833.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newjersey();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newjersey();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newjersey();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newjersey();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-hampshire.png' alt='New Hampshire'></img>";
 }
 
@@ -967,8 +967,8 @@ function trenton() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Atlantic City is where the street names came from for the game monopoly";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newmexico();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newmexico();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newmexico();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newmexico();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-jersey.png' alt='New Jersey'></img>";
 }
 
@@ -999,8 +999,8 @@ function santafe() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "White Sands National Monument is a desert, not of sand, but of gleaming white gypsum crystals";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newyork();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newyork();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); newyork();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); newyork();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-mexico.png' alt='New Mexico'></img>";
 }
 
@@ -1031,8 +1031,8 @@ function albany() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The first American chess tournament was held in New York in 1843";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); northcarolina();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); northcarolina();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); northcarolina();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); northcarolina();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/new-york.png' alt='New York'></img>";
 }
 
@@ -1063,8 +1063,8 @@ function raleigh() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Krispy Kreme Doughnut was founded here. That's right. That delicous donught.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); northdakota();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); northdakota();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); northdakota();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); northdakota();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/north-carolina.png' alt='North Carolina'></img>";
 }
 
@@ -1095,8 +1095,8 @@ function bismarck() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "North Dakota passed a bill in 1987 making English the official state language";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); ohio();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); ohio();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); ohio();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); ohio();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/north-dakota.png' alt='North Dakota'></img>";
 }
 
@@ -1127,8 +1127,8 @@ function columbus() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Cleveland boasts America's first traffic light. It began on Aug. 5, 1914";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); oklahoma();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); oklahoma();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); oklahoma();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); oklahoma();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/ohio.png' alt='Ohio'></img>";
 }
 
@@ -1159,8 +1159,8 @@ function oklahomacity() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "An Oklahoman, Sylvan Goldman, invented the first shopping cart";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); oregon();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); oregon();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); oregon();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); oregon();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/oklahoma.png' alt='Oklahoma'></img>";
 }
 
@@ -1191,8 +1191,8 @@ function salem() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Oregon has more ghost towns than any other state.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); pennsylvania();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); pennsylvania();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); pennsylvania();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); pennsylvania();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/oregon.png' alt='Oregon'></img>";
 }
 
@@ -1223,8 +1223,8 @@ function harrisburg() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Little League Baseball's first World Series was held in 1946 in Williamsport.";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); rhodeisland();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); rhodeisland();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); rhodeisland();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); rhodeisland();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/pennsylvania.png' alt='Pennsylvania'></img>";
 }
 
@@ -1255,8 +1255,8 @@ function providence() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "Rhode Island was the last of the original thirteen colonies to become a state";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); southcarolina();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); southcarolina();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); southcarolina();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); southcarolina();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/rhode-island.png' alt='Rhode Island'></img>";
 }
 
@@ -1287,8 +1287,8 @@ function columbia() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "The Board of Public Works in Gaffney built an elevated water storage tank in the shape of a peach in 1981";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); southdakota();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); southdakota();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); southdakota();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); southdakota();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/south-carolina.png' alt='South Carolina'></img>";
 }
 
@@ -1318,9 +1318,9 @@ function pierre() {
     txt.open("GET", "StateCapitaltxt/Pierre.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); tennessee();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); tennessee();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "The largest underground gold mine is the Homestake Mine in Lead.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); tennessee();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); tennessee();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/south-dakota.png' alt='South Dakota'></img>";
 }
 
@@ -1350,9 +1350,9 @@ function nashville() {
     txt.open("GET", "StateCapitaltxt/Nashville.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); texas();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); texas();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "Bristol is known as the Birthplace of Country Music.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); texas();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); texas();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/tennessee.png' alt='Tennessee'></img>";
 }
 
@@ -1382,9 +1382,9 @@ function austin() {
     txt.open("GET", "StateCapitaltxt/Austin.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); utah();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); utah();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "The King Ranch in Texas is bigger than the state of Rhode Island.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); utah();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); utah();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/texas.png' alt='Texas'></img>";
 }
 
@@ -1414,9 +1414,9 @@ function saltlakecity() {
     txt.open("GET", "StateCapitaltxt/Salt Lake City.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); vermont();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect();vermont();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "The average snowfall in the mountains near Salt Lake City is 500 inches.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); vermont();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect();vermont();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/utah.png' alt='Utah'></img>";
 }
 
@@ -1446,9 +1446,9 @@ function montpelier() {
     txt.open("GET", "StateCapitaltxt/Montpelier.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); virginia();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); virginia();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "Until 1996, Vermont was the only state without a Wal-Mart.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); virginia();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); virginia();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/vermont.png' alt='Vermont'></img>";
 }
 
@@ -1477,9 +1477,9 @@ function richmond() {
     txt.open("GET", "StateCapitaltxt/Richmond.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); washington();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); washington();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "Seven Presidents are buried in Virginia: Washington, Jefferson, Madison, Monroe, Tyler, Taft and Kennedy.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); washington();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); washington();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/virginia.png' alt='Virginia'></img>";
 }
 
@@ -1509,9 +1509,9 @@ function olympia() {
     txt.open("GET", "StateCapitaltxt/Olympia.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); westvirgina();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); westvirgina();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "The world's first soft-serve ice cream machine was located in an Olympia Dairy Queen.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); westvirgina();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); westvirgina();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/washington.png' alt='Washington'></img>";
 }
 
@@ -1540,9 +1540,9 @@ function charleston() {
     txt.open("GET", "StateCapitaltxt/Charleston.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); wisconsin();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); wisconsin();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "Nearly 75% of West Virginia is covered by forests.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); wisconsin();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); wisconsin();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/west-virginia.png' alt='West Virginia'></img>";
 }
 
@@ -1572,9 +1572,9 @@ function madison() {
     txt.open("GET", "StateCapitaltxt/Madison.txt", true);
     txt.send();
     document.getElementById("flip").innerHTML = "";
-    document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); wyoming();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); wyoming();'> Darn &nbsp; ✗</button>";
+    document.getElementById("text").innerHTML = "Wisconsin is the dairy capital of the United States.";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); wyoming();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); wyoming();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/wisconson.png' alt='Wisconson'></img>";
 }
 
@@ -1605,8 +1605,8 @@ function cheyenne() {
     txt.send();
     document.getElementById("flip").innerHTML = "";
     document.getElementById("text").innerHTML = "";
-    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); finished();' >Yes! &nbsp; ✔ </button>";
-    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); finished();'> Darn &nbsp; ✗</button>";
+    document.getElementById("right").innerHTML = "<button id='button' type='button' onclick ='correct(); finished();' >correct</button>";
+    document.getElementById("wrong").innerHTML = "<button id='button' type='button' onclick ='incorrect(); finished();'>incorrect</button>";
     document.getElementById('image').innerHTML = "<img id='image' src='state-images/whyoming.png' alt='Wyoming'></img>";
 }
 
