@@ -6,7 +6,7 @@ span.setAttributeNode(classAttr);
 var idAttr = document.createAttribute("id");
 idAttr.value = "score-preview";
 span.setAttributeNode(idAttr);
-var spanContent = document.createTextNode("Your last score: " + (localStorage.score) + "/50");
+var spanContent = document.createTextNode("Your last score " + (localStorage.score) + "/50");
 span.appendChild(spanContent);
 
 startingScore.appendChild(span);
@@ -1625,7 +1625,7 @@ function finished() {
     document.getElementById("wrong").innerHTML = "";
     document.getElementById("score").innerHTML = "";  
     document.getElementById('image').innerHTML = "<img src='state-images/united-states.png' alt='United States'></img>";
-    document.getElementById("flashcard").innerHTML = "Your final score: " + (localStorage.score) + "/50";
+    document.getElementById("flashcard").innerHTML = "Your final score " + (localStorage.score) + "/50";
     ;
     document.getElementById("flip").innerHTML = "<button id='button' type='button' onclick ='location.reload();'>Try again</button>";
 }
@@ -1636,7 +1636,7 @@ function correct() {
         } else {
             localStorage.score = 0;
         }
-        document.getElementById("score").innerHTML = "Your score: " + (localStorage.score) + "/50";
+        document.getElementById("score").innerHTML = "Your score " + (localStorage.score) + "/50";
     } else {
         document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
     }
@@ -1648,14 +1648,14 @@ function incorrect() {
         } else {
             localStorage.score = 0;
         }
-        document.getElementById("score").innerHTML = "Your score: " + (localStorage.score) + "/50";
+        document.getElementById("score").innerHTML = "Your score " + (localStorage.score) + "/50";
     } else {
         document.getElementById("score").innerHTML = "Sorry, you need a device with web storage to save your score.";
     }
 }
 function reset() {
     localStorage.score = 0;
-    document.getElementById("score").innerHTML = "Your score: " + (localStorage.score) + "/50";
+    document.getElementById("score").innerHTML = "Your score " + (localStorage.score) + "/50";
 }
 
 
